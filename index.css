@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: roboto_med;
+  src: url(Roboto_Slab/static/RobotoSlab-Medium.ttf);
+}
+
+@font-face {
+  font-family: roboto_light;
+  src: url(Roboto_Slab/static/RobotoSlab-Light.ttf);
+}
+
+.title-wrapper {
+  background-color: lightblue;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1.5px;
+}
+
+.title {
+  font-family: roboto_med;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.desc,
+.detail-msg {
+  line-height: 29px;
+  font-family: roboto_light;
+  font-size: 1.1rem;
+}
+
+.buzzwire-wrapper {
+  display: flex;
+  justify-content: center;
+}
