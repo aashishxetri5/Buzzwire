@@ -16,7 +16,7 @@
 
 .title-wrapper {
   background-color: lightblue;
-  padding: 15px 0;
+  padding: 15px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
