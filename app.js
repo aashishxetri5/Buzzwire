@@ -8,15 +8,14 @@ const isCursorInWire = (cursorLocation) => {
     looseBuzz.play();
     alert("You Lost!! Better luck next time.");
     hasComefromStart = false;
-    location.reload();
+    endTasks();
   }
 
   //CHECKS IF THE CURSOR HAS REACHED THE END SIGN. IF YES, 'YOU WON' WILL BE ALERTED
   if (cursorLocation === "end-sign" || cursorLocation === "pole-r") {
     winBuzz.play();
     alert("Congratulations!! You Won");
-    hasComefromStart = false;
-    location.reload();
+    endTasks();
   }
 };
 
@@ -33,3 +32,8 @@ document.body.addEventListener("mousemove", (e) => {
     isCursorInWire(where);
   }
 });
+
+function endTasks() {
+  hasComefromStart = false;
+  location.reload();
+}
