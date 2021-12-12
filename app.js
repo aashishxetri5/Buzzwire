@@ -8,6 +8,7 @@ const isCursorInWire = (cursorLocation) => {
     looseBuzz.play();
     alert("You Lost!! Better luck next time.");
     hasComefromStart = false;
+    location.reload();
   }
 
   //CHECKS IF THE CURSOR HAS REACHED THE END SIGN. IF YES, 'YOU WON' WILL BE ALERTED
@@ -15,6 +16,7 @@ const isCursorInWire = (cursorLocation) => {
     winBuzz.play();
     alert("Congratulations!! You Won");
     hasComefromStart = false;
+    location.reload();
   }
 };
 
